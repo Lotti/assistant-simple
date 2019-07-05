@@ -1,0 +1,777 @@
+{
+  "name": "Pizza a domicilio AAA",
+  "intents": [
+    {
+      "intent": "orari",
+      "examples": [
+        {
+          "text": "che tempi ci sono per la consegna?"
+        },
+        {
+          "text": "debbo aspettare molto"
+        },
+        {
+          "text": "consegnate subito?"
+        },
+        {
+          "text": "quanto debbo aspettare?"
+        },
+        {
+          "text": "quanto ci mettete a consegnare"
+        },
+        {
+          "text": "Quanto passa fra l'ordine e la consegna"
+        },
+        {
+          "text": "per che ora potete consegnarle?"
+        },
+        {
+          "text": "entro quando riuscite a consegnare?"
+        }
+      ]
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "buonasera"
+        },
+        {
+          "text": "Hey, come va ?"
+        },
+        {
+          "text": "salve"
+        },
+        {
+          "text": "buona sera"
+        },
+        {
+          "text": "buon pomeriggio"
+        },
+        {
+          "text": "ciao"
+        }
+      ]
+    },
+    {
+      "intent": "descrizione",
+      "examples": [
+        {
+          "text": "cosa siete in grado di preparare?"
+        },
+        {
+          "text": "cosa potete prepare?"
+        },
+        {
+          "text": "fate tutti i tipi di pizza?"
+        },
+        {
+          "text": "cosa posso ordinare?"
+        },
+        {
+          "text": "posso sapere cosa avete di buono?"
+        },
+        {
+          "text": "cosa preparate oltre le pizze?"
+        },
+        {
+          "text": "avete le crocchette di patate?"
+        },
+        {
+          "text": "fate anche suppli e crocchette"
+        },
+        {
+          "text": "avete i suppli di riso?"
+        }
+      ]
+    },
+    {
+      "intent": "tipi_pizza",
+      "examples": [
+        {
+          "text": "mi elencate i gusti delle pizze"
+        },
+        {
+          "text": "che tipi di pizza preparate"
+        },
+        {
+          "text": "fate pizze sia bianche che rosse?"
+        },
+        {
+          "text": "esiste un elenco delle pizze?"
+        },
+        {
+          "text": "che tipo di pizze avete?"
+        },
+        {
+          "text": "quali sono le pizze che potete preparare?"
+        },
+        {
+          "text": "è possibile aver un elenco delle vostre pizze?"
+        },
+        {
+          "text": "che pizza ci sono?"
+        },
+        {
+          "text": "che pizze fate?"
+        },
+        {
+          "text": "quali sono le pizze disponibili?"
+        }
+      ]
+    },
+    {
+      "intent": "orario_consegna",
+      "examples": [
+        {
+          "text": "abbiamo bisogno delle pizze per le 22"
+        },
+        {
+          "text": "Le pizze devono essere a casa per le 21"
+        },
+        {
+          "text": "alle 20 arrivano i miei ospiti"
+        },
+        {
+          "text": "vorrei che le pizze arrivassero per le 23"
+        },
+        {
+          "text": "vorrei le pizze a casa per le 20"
+        }
+      ]
+    },
+    {
+      "intent": "consegna",
+      "examples": [
+        {
+          "text": "abito fuori città, ci sono problemi per la consegna?"
+        },
+        {
+          "text": "come avviene la consegna"
+        },
+        {
+          "text": "abito in una zona isolata, consegnate comunque?"
+        },
+        {
+          "text": "consegnate in tutte le zone?"
+        },
+        {
+          "text": "in che zone consegnate"
+        }
+      ]
+    },
+    {
+      "intent": "capabilities",
+      "examples": [
+        {
+          "text": "cosa sei in grado di fare"
+        },
+        {
+          "text": "come puoi aiutarmi ?"
+        },
+        {
+          "text": "che aiuto mi puoi dare?"
+        },
+        {
+          "text": "cosa ti posso domandare?"
+        },
+        {
+          "text": "cosa puoi fare per me?"
+        },
+        {
+          "text": "che suggerimenti puoi darmi?"
+        },
+        {
+          "text": "cosa ti posso chiedere?"
+        }
+      ]
+    },
+    {
+      "intent": "ordine",
+      "examples": [
+        {
+          "text": "posso fare il mio ordine"
+        },
+        {
+          "text": "debbo ordinare delle pizze"
+        },
+        {
+          "text": "potete portarmi delle pizza a casa ?"
+        },
+        {
+          "text": "vorrei ordinare una pizza"
+        },
+        {
+          "text": "direi  che ordineremo delle pizze"
+        },
+        {
+          "text": "ok, vada per le pizze"
+        },
+        {
+          "text": "benissimo. allora andiamo con le pizze"
+        },
+        {
+          "text": "vorrei ordinare"
+        },
+        {
+          "text": "voglio fare una ordinazione"
+        },
+        {
+          "text": "vorremmo delle pizze per stasera"
+        }
+      ]
+    },
+    {
+      "intent": "topping",
+      "examples": [
+        {
+          "text": "vorrei aggiungere qualcosa"
+        },
+        {
+          "text": "vorrei aggiungere della rughetta su 2 pizze"
+        },
+        {
+          "text": "si, vorrei aggiungere degli ingredienti"
+        },
+        {
+          "text": "vorrei fare delle variazioni"
+        },
+        {
+          "text": "posso aggiungere qualche alto ingrediente?"
+        },
+        {
+          "text": "desiderate fare qualche modifica"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "Aggiunte",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "prosciutto crudo",
+          "synonyms": [
+            "san daniele",
+            "crudo",
+            "parma"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "doppia mozzarella",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "prosciutto cotto",
+          "synonyms": [
+            "cotto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "filetti di alice",
+          "synonyms": [
+            "alici",
+            "acciughe"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Origano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rughetta",
+          "synonyms": [
+            "rucola"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Tipo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Marinara",
+          "synonyms": [
+            "Marinare"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Napoli",
+          "synonyms": [
+            "Napoli"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Focaccia",
+          "synonyms": [
+            "Focacce"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Capricciosa",
+          "synonyms": [
+            "Capricciose"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Margherita",
+          "synonyms": [
+            "Margherite"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Funghi",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "sys-percentage",
+      "values": []
+    }
+  ],
+  "language": "it",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ciao. Benvenuto nel nostro negozio. Come possiamo aiutarti?",
+            "Ciao e benvenuto. Cosa possiamo preparare di buono per te?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_25_1504010395270",
+      "context": {
+        "orario_consegna": null
+      },
+      "dialog_node": "node_33_1504013990753"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_29_1504011208895",
+      "event_name": "focus",
+      "dialog_node": "handler_31_1504011208895",
+      "previous_sibling": "handler_30_1504011208895"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_29_1504011208895",
+      "context": {
+        "orario_consegna": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_30_1504011208895"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Cosa vuoi aggiungere?"
+      },
+      "parent": "slot_19_1504000091066",
+      "event_name": "focus",
+      "dialog_node": "handler_21_1504000091066",
+      "previous_sibling": "handler_20_1504000091066"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_19_1504000091066",
+      "context": {
+        "aggiunte": "@Aggiunte"
+      },
+      "conditions": "@Aggiunte",
+      "event_name": "input",
+      "dialog_node": "handler_20_1504000091066"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Su quante pizze vuoi fare delle aggiunte"
+      },
+      "parent": "slot_16_1503999913193",
+      "event_name": "focus",
+      "dialog_node": "handler_18_1503999913193",
+      "previous_sibling": "handler_17_1503999913193"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_16_1503999913193",
+      "context": {
+        "numvar": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_17_1503999913193"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1503994880521",
+      "context": {
+        "tipo": "@Tipo"
+      },
+      "conditions": "@Tipo",
+      "event_name": "input",
+      "dialog_node": "handler_8_1503994880521",
+      "previous_sibling": "handler_9_1503994880521"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Ottima scelta. Abbiamo le migliori $tipo della citta!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1503994880521",
+      "conditions": "@Tipo:Margherita",
+      "event_name": "filled",
+      "dialog_node": "handler_22_1504002429787",
+      "previous_sibling": "handler_8_1503994880521"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Che  pizze vorresti?"
+      },
+      "parent": "slot_7_1503994880521",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1503994880521"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": "Ok, avrai le tue $numpizze pizze $tipo a casa per le @sys-time"
+      },
+      "parent": "node_15_1481279486660",
+      "conditions": "@sys-time",
+      "dialog_node": "node_23_1481282151899"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Puoi specificare meglio l'orario di consegna?"
+      },
+      "parent": "slot_36_1504017361311",
+      "event_name": "focus",
+      "dialog_node": "handler_38_1504017361311",
+      "previous_sibling": "handler_37_1504017361311"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_36_1504017361311",
+      "context": {
+        "orario_consegna": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_37_1504017361311"
+    },
+    {
+      "type": "slot",
+      "parent": "node_35_1504017291970",
+      "variable": "$orario_consegna",
+      "dialog_node": "slot_36_1504017361311"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Intent: <?intents[0].intent?>, Confidence:  <?intents[0].confidence?>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_39_1504018987216",
+      "dialog_node": "node_2_1504022433578",
+      "previous_sibling": "node_1_1504021911589"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "<? intents ?>  <?entities?>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_39_1504018987216",
+      "conditions": "intents[0].confidence  <  0.3",
+      "dialog_node": "node_1_1504021911589"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Quante pizze vuoi ordinare ?"
+      },
+      "parent": "slot_11_1503995254569",
+      "event_name": "focus",
+      "dialog_node": "handler_13_1503995254569",
+      "previous_sibling": "handler_12_1503995254569"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_11_1503995254569",
+      "context": {
+        "numpizze": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_12_1503995254569"
+    },
+    {
+      "type": "slot",
+      "parent": "node_15_1503999755233",
+      "variable": "$aggiunte",
+      "dialog_node": "slot_19_1504000091066",
+      "previous_sibling": "slot_16_1503999913193"
+    },
+    {
+      "type": "slot",
+      "parent": "node_15_1503999755233",
+      "variable": "$numvar",
+      "dialog_node": "slot_16_1503999913193"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Perfetto, avrai le tue  $numpizze pizze  $tipo a casa entro le $orario_consegna. Qualche altra richiesta?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1481272488324",
+      "conditions": "",
+      "dialog_node": "node_28_1504011006364",
+      "previous_sibling": "node_14_1503995970516"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1481272488324",
+      "variable": "$numpizze",
+      "dialog_node": "slot_11_1503995254569",
+      "previous_sibling": "slot_7_1503994880521"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Perfetto preparerò per te $numpizze pizze  $tipo. Preferenze sull'orario di consegna?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1481272488324",
+      "conditions": "$orario_consegna == null",
+      "dialog_node": "node_14_1503995970516",
+      "previous_sibling": "handler_24_1504010041386"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1481272488324",
+      "variable": "$orario_consegna",
+      "dialog_node": "slot_29_1504011208895",
+      "previous_sibling": "slot_11_1503995254569"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1481272488324",
+      "variable": "$tipo",
+      "dialog_node": "slot_7_1503994880521",
+      "previous_sibling": "node_28_1504011006364"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Possiamo prepare delle ottime Margherite, Marinare, Napoli, Capricciose, Funghi e Focacce"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1481272488324",
+      "conditions": "#tipi_pizza",
+      "event_name": "generic",
+      "dialog_node": "handler_24_1504010041386"
+    },
+    {
+      "type": "standard",
+      "title": "Orario Consegna Ordine",
+      "output": {
+        "text": "garantiamo la consegna entro mezz'ora in tutta la città. Per che ora volete le pizze a casa?"
+      },
+      "conditions": "#orari",
+      "dialog_node": "node_15_1481279486660",
+      "previous_sibling": "node_14_1481279470911"
+    },
+    {
+      "type": "standard",
+      "title": "Debug node",
+      "output": {},
+      "conditions": "true",
+      "dialog_node": "node_39_1504018987216",
+      "previous_sibling": "node_25_1504010395270"
+    },
+    {
+      "type": "standard",
+      "title": "Informazioni",
+      "output": {
+        "text": {
+          "values": [
+            "Posso darti informazioni sulla nostra offerta di prodotti, modalità e luoghi di consegna ed aiutarti a scegliere le pizze più adatte ai tuoi gusti",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#capabilities",
+      "dialog_node": "node_35_1481624558269",
+      "previous_sibling": "node_3_1481273405988"
+    },
+    {
+      "type": "frame",
+      "title": "Gestione Ordine",
+      "output": {},
+      "conditions": "#ordine",
+      "dialog_node": "node_1_1481272488324",
+      "previous_sibling": "node_15_1481279486660"
+    },
+    {
+      "type": "standard",
+      "title": "Richieste Chiarimenti Prodotti",
+      "output": {
+        "text": "abbiamo pizze di tutti i tipi, crocchette, supplì e bevande sempre fredde!"
+      },
+      "conditions": "#descrizione",
+      "dialog_node": "node_14_1481279470911",
+      "previous_sibling": "node_35_1481624558269"
+    },
+    {
+      "type": "standard",
+      "title": "Modalità di Consegna",
+      "output": {
+        "text": "Consegnamo dalle 18 alle 24 in tutta la città"
+      },
+      "conditions": "#consegna",
+      "dialog_node": "node_1_1481112413302",
+      "previous_sibling": "node_35_1504017291970"
+    },
+    {
+      "type": "standard",
+      "title": "Saluti iniziali",
+      "output": {
+        "text": {
+          "values": [
+            "Ciao, cosa possiamo fare per te ?"
+          ]
+        }
+      },
+      "conditions": "#greetings",
+      "dialog_node": "node_3_1481273405988",
+      "previous_sibling": "node_39_1504018987216"
+    },
+    {
+      "type": "frame",
+      "title": "Preferenze Orario Consegna",
+      "output": {
+        "text": {
+          "values": [
+            "Ok, avrai le tue $numpizze pizze $tipo a casa tua verso le $orario_consegna"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#orario_consegna",
+      "dialog_node": "node_35_1504017291970",
+      "previous_sibling": "node_15_1503999755233"
+    },
+    {
+      "type": "standard",
+      "title": "Default",
+      "output": {
+        "text": {
+          "values": [
+            "Non sono ancora in grado di rispondere a questo tipo di domande"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1481112525850",
+      "previous_sibling": "node_1_1481112413302"
+    },
+    {
+      "type": "frame",
+      "title": "Gestione Aggiunte",
+      "output": {
+        "text": {
+          "values": [
+            "Perfetto prepareremo $numpizze  meravigliose pizze $tipo, di cui $numvar con $aggiunte"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#topping",
+      "dialog_node": "node_15_1503999755233",
+      "previous_sibling": "node_1_1481272488324"
+    },
+    {
+      "type": "standard",
+      "title": "conversation_start",
+      "output": {},
+      "conditions": "conversation_start",
+      "dialog_node": "node_25_1504010395270"
+    }
+  ],
+  "workspace_id": "2169cbf9-a912-4e86-857b-942e2bf30a5e",
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "status": "Available"
+}
